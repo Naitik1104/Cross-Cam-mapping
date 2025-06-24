@@ -18,8 +18,8 @@ It operates on pre-generated object detections from YOLOv11 models applied to pr
 | `broadcast.py`                   | Script to run given YOLO on `broadcast.mp4`          |
 | `tacticam.py`                    | Script to run given YOLO on `tacticam.mp4`           |
 |                                 |                                                |
-| `runs/detect/predict1/`          | Object-detection results for `broadcast.mp4`   |
-| `runs/detect/predict2/`          | Object-detection results for `tacticam.mp4`    |
+| `runs/detect/predict1/broadcast.mp4`          | Object-detection results for `broadcast.mp4` (Compressed version of original avi file is stored)  |
+| `runs/detect/predict2/tacticam.mp4`          | Object-detection results for `tacticam.mp4` (Compressed version of original avi file is stored)   |
 |                                 |                                                |
 | `run_broadcast.py`               | Script to generate tracking for broadcast      |
 | `run_tacticam.py`                | Script to generate tracking for tacticam       |
