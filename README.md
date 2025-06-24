@@ -7,13 +7,13 @@ It operates on pre-generated object detections from YOLOv11 models applied to pr
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 | File / Folder                    | Description                                    |
 |---------------------------------|------------------------------------------------|
 | `broadcast.mp4`                  | Given video (broadcast camera)                 |
 | `tacticam.mp4`                   | Given video (tacticam)                         |
-| `best.pt`                        | Given YOLOv11 model (**This file is not available i this repository as it is too large**)   |
+| `best.pt`                        | Given YOLOv11 model (**This file is not available in this repository as it is too large**)   |
 |                                 |                                                |
 | `broadcast.py`                   | Script to run given YOLO on `broadcast.mp4`          |
 | `tacticam.py`                    | Script to run given YOLO on `tacticam.mp4`           |
@@ -34,7 +34,7 @@ It operates on pre-generated object detections from YOLOv11 models applied to pr
 | `README.md`                      | Project documentation                         |
 
 
-#Final output mapping is stored in player_mapping.csv already. To regenerate mapping, run mapping.py file again.
+###Final output mapping is stored in player_mapping.csv already. To regenerate mapping, run mapping.py file again.
 ---
 
 ## How It Works
