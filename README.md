@@ -13,7 +13,7 @@ It operates on pre-generated object detections from YOLOv11 models applied to pr
 |---------------------------------|------------------------------------------------|
 | `broadcast.mp4`                  | Given video (broadcast camera)                 |
 | `tacticam.mp4`                   | Given video (tacticam)                         |
-| `best.pt`                        | Given YOLOv11 model (pre-trained, provided)    |
+| `best.pt`                        | Given YOLOv11 model (**This file is not available i this repository as it is too large**)   |
 |                                 |                                                |
 | `broadcast.py`                   | Script to run given YOLO on `broadcast.mp4`          |
 | `tacticam.py`                    | Script to run given YOLO on `tacticam.mp4`           |
