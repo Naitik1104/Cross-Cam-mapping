@@ -7,32 +7,35 @@ It operates on pre-generated object detections from YOLOv11 models applied to pr
 
 ---
 
-## Project Structure
-├── broadcast.mp4 # Given video (broadcast cam)
-├── tacticam.mp4 # Given video (tacticam)
-├── best.pt # Given YOLOv11 model (provided)
+## 📂 Project Structure
 
-├── broadcast.py # Runs YOLO model on broadcast.mp4
-├── tacticam.py # Runs YOLO model on tacticam.mp4
-├── runs/
-│ └── detect/
-│ ├── predict1/ # Object-detected video for broadcast.mp4
-│ └── predict2/ # Object-detected video for tacticam.mp4
+| File / Folder                    | Description                                    |
+|---------------------------------|------------------------------------------------|
+| `broadcast.mp4`                  | Given video (broadcast camera)                 |
+| `tacticam.mp4`                   | Given video (tacticam)                         |
+| `best.pt`                        | Given YOLOv11 model (pre-trained, provided)    |
+|                                 |                                                |
+| `broadcast.py`                   | Script to run given YOLO on `broadcast.mp4`          |
+| `tacticam.py`                    | Script to run given YOLO on `tacticam.mp4`           |
+|                                 |                                                |
+| `runs/detect/predict1/`          | Object-detection results for `broadcast.mp4`   |
+| `runs/detect/predict2/`          | Object-detection results for `tacticam.mp4`    |
+|                                 |                                                |
+| `run_broadcast.py`               | Script to generate tracking for broadcast      |
+| `run_tacticam.py`                | Script to generate tracking for tacticam       |
+|                                 |                                                |
+| `track_broadcast.csv`            | YOLO tracking output for `broadcast.mp4`       |
+| `track_tacticam.csv`             | YOLO tracking output for `tacticam.mp4`        |
+|                                 |                                                |
+| `mapping.py`                     | Main script: generates cross-camera ID mapping |
+| `mapping_output.csv`             | Final output: broadcast ↔️ tacticam player mapping |
+|                                 |                                                |
+| `requirements.txt`               | Project dependencies                          |
+| `README.md`                      | Project documentation                         |
 
-├── run_broadcast.py # Script to generate tracking for broadcast.mp4
-├── run_tacticam.py # Script to generate tracking for tacticam.mp4
 
-├── track_broadcast.csv # YOLO tracking result on broadcast.mp4
-├── track_tacticam.csv # YOLO tracking result on tacticam.mp4
-
-├── mapping.py # Main script: generates identity mapping
-├── mapping_output.csv # Final output: cross-camera ID mapping
-
-├── requirements.txt # Dependencies
-└── README.md # Project README
-
----
 #Final output mapping is stored in player_mapping.csv already. To regenerate mapping, run mapping.py file again.
+---
 
 ## How It Works
 
