@@ -28,13 +28,13 @@ It operates on pre-generated object detections from YOLOv11 models applied to pr
 | `track_tacticam.csv`             | YOLO tracking output for `tacticam.mp4`        |
 |                                 |                                                |
 | `mapping.py`                     | Main script: generates cross-camera ID mapping |
-| `mapping_output.csv`             | Final output: broadcast ↔️ tacticam player mapping |
+| `player_mapping.csv`             | Final output: broadcast ↔️ tacticam player mapping |
 |                                 |                                                |
 | `requirements.txt`               | Project dependencies                          |
 | `README.md`                      | Project documentation                         |
 
 
-###Final output mapping is stored in player_mapping.csv already. To regenerate mapping, run mapping.py file again.
+##Final output mapping is stored in player_mapping.csv already. To regenerate mapping, run mapping.py file again and view the results stored in player_mapping.csv.
 ---
 
 ## How It Works
