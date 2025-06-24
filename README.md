@@ -34,6 +34,7 @@ It operates on pre-generated object detections from YOLOv11 models applied to pr
 | `README.md`                      | Project documentation                         |
 
 
+---
 ##Final output mapping is stored in player_mapping.csv already. To regenerate mapping, run mapping.py file again and view the results stored in player_mapping.csv.
 ---
 
