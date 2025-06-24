@@ -41,12 +41,13 @@ Final output mapping is stored in player_mapping.csv already. To regenerate mapp
 ## How It Works
 
 1. **Input:** Two video sources with separate views of the same scene — `broadcast.mp4` and `tacticam.mp4`
-2. **Object Detection:** YOLOv11 model is used to detect and track objects in each video.
-3. **Tracking Output:**  
+2. '''pip install -r requirements.txt''' to install all the required dependencies for the project.
+3. **Object Detection:** YOLOv11 model is used to detect and track objects in each video.
+4. **Tracking Output:**  
     - `track_broadcast.csv`  
     - `track_tacticam.csv`  
     Each CSV contains object tracking data per frame.
-4. **Mapping:**  
+5. **Mapping:**  
     - `mapping.py` compares movement patterns and positions across views.  
     - Generates a mapping between `broadcast_id` ↔ `tacticam_id`.
 
