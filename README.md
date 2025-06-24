@@ -11,16 +11,23 @@ It operates on pre-generated object detections from YOLOv11 models applied to pr
 ├── broadcast.mp4 # Given video (broadcast cam)
 ├── tacticam.mp4 # Given video (tacticam)
 ├── best.pt # Given YOLOv11 model (provided)
-├── broadcast.py # Script for running given object detection model on broadcast.mp4
-├── tacticam.py # Script for running given object detectio model on tacticam.mp4
-├── runs/detect/predict1 # Contains object-detected video for broadcast.mp4
-├── runs/detect/predict2 # Contains object-deteted video for tacticam.mp4
+
+├── broadcast.py # Runs YOLO model on broadcast.mp4
+├── tacticam.py # Runs YOLO model on tacticam.mp4
+├── runs/
+│ └── detect/
+│ ├── predict1/ # Object-detected video for broadcast.mp4
+│ └── predict2/ # Object-detected video for tacticam.mp4
+
 ├── run_broadcast.py # Script to generate tracking for broadcast.mp4
 ├── run_tacticam.py # Script to generate tracking for tacticam.mp4
+
 ├── track_broadcast.csv # YOLO tracking result on broadcast.mp4
 ├── track_tacticam.csv # YOLO tracking result on tacticam.mp4
+
 ├── mapping.py # Main script: generates identity mapping
 ├── mapping_output.csv # Final output: cross-camera ID mapping
+
 ├── requirements.txt # Dependencies
 └── README.md # Project README
 
