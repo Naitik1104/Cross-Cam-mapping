@@ -48,7 +48,7 @@ Final output mapping is stored in player_mapping.csv already. To regenerate mapp
     - `track_tacticam.csv`  
     Each CSV contains object tracking data per frame.
 5. **Mapping:**  
-    - `mapping.py` compares movement patterns and positions across views.  
+    - `main.py` compares movement patterns and positions across views.  
     - Generates a mapping between `broadcast_id` ↔ `tacticam_id`.
 
 ---
