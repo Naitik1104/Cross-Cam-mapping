@@ -27,7 +27,7 @@ It operates on pre-generated object detections from YOLOv11 models applied to pr
 | `track_broadcast.csv`            | YOLO tracking output for `broadcast.mp4`       |
 | `track_tacticam.csv`             | YOLO tracking output for `tacticam.mp4`        |
 |                                 |                                                |
-| `mapping.py`                     | Main script: generates cross-camera ID mapping |
+| `**mapping.py**`                     | **Main script: generates cross-camera ID mapping** |
 | `player_mapping.csv`             | Final output: broadcast and tacticam player mapping |
 |                                 |                                                |
 | `requirements.txt`               | Project dependencies                          |
