@@ -31,7 +31,7 @@ def run_tracking(video, model, output_csv):
 
             detections_for_sort = []
             for box, score, cls in zip(boxes_xyxy, scores, classes):
-                if cls == 0:  # assuming class 0 = player
+                if cls == 0:  
                     x1, y1, x2, y2 = box
                     detections_for_sort.append(([x1, y1, x2-x1, y2-y1], score, 'player'))
 
@@ -44,9 +44,7 @@ def run_tracking(video, model, output_csv):
                 ltrb = track.to_ltrb()
                 detections.append([frame_num, track_id, *ltrb])
 
-        # cv2.imshow("Tracking", frame)
-        # if cv2.waitKey(1) == ord('q'):
-        #     break
+
 
     cap.release()
     cv2.destroyAllWindows()
